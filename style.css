@@ -197,6 +197,6 @@ footer {
   }
 }
 img {
-  width: 300px; /* Largeur fixe de 300 pixels */
+  max-width: 100%; /* L'image ne dépassera pas la largeur de son conteneur */
   height: auto; /* Hauteur ajustée proportionnellement */
 }
