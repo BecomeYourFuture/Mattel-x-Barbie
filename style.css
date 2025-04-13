@@ -1,4 +1,4 @@
-/* Variables et réinitialisation */
+/* Variables de style et réinitialisation des marges */
 :root {
   --primary-color: #3498db;
   --secondary-color: #2ecc71;
@@ -20,7 +20,7 @@ body {
   background: var(--bg-color);
 }
 
-/* Navbar */
+/* Barre de navigation */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -70,7 +70,7 @@ body {
   margin: 4px 0;
 }
 
-/* Sections */
+/* Sections de contenu */
 .section {
   padding: 60px 20px;
   text-align: center;
@@ -79,6 +79,7 @@ body {
   animation: fadeInUp 1s forwards;
 }
 
+/* Alternance de fond pour les sections */
 .section:nth-child(even) {
   background: #e9ecef;
 }
@@ -91,6 +92,86 @@ body {
 
 .section p {
   font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+/* Images responsives */
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+/* Cards pour la section Projets */
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 300px;
+  overflow: hidden;
+  transition: transform var(--transition-speed);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 10px;
+  color: var(--primary-color);
+}
+
+.card p {
+  padding: 0 10px 10px;
+}
+
+/* Animation d'apparition */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Formulaire de contact */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form input, form textarea {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background: var(--secondary-color);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background var(--transition-speed);
+}
+
+form button:hover {
+  background: #27ae60;
 }
 
 /* Footer */
@@ -101,15 +182,7 @@ footer {
   padding: 20px;
 }
 
-/* Animation keyframes */
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Responsive design */
+/* Responsive design pour mobile */
 @media (max-width: 768px) {
   .menu {
     display: none;
@@ -127,5 +200,10 @@ footer {
   
   .menu.active {
     display: flex;
+  }
+  
+  .card-container {
+    flex-direction: column;
+    align-items: center;
   }
 }
