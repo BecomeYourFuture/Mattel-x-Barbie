@@ -1,7 +1,7 @@
-const hamburger = document.getElementById('hamburger');
-const menu = document.getElementById('menu');
+// Script pour le menu mobile
+const mobileMenu = document.getElementById('mobile-menu');
+const menu = document.querySelector('.menu');
 
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
+mobileMenu.addEventListener('click', () => {
   menu.classList.toggle('active');
 });
