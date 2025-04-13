@@ -248,9 +248,17 @@ img {
 }
 
 @media screen and (max-width: 768px) {
-  .timeline::before {
-    left: 8px;
-  }
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: #000;
+  transform: translateX(-50%);
+}
+
 
   .timeline-event {
     width: 100%;
