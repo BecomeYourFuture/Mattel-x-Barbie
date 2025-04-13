@@ -28,17 +28,19 @@ body {
 }
 
 /* Hamburger */
-.menu-toggle {
+.hamburger {
   display: none;
   flex-direction: column;
   justify-content: space-between;
   width: 25px;
   height: 20px;
+  background: none;
+  border: none;
   cursor: pointer;
   z-index: 1100;
 }
 
-.menu-toggle .bar {
+.hamburger .bar {
   height: 3px;
   width: 100%;
   background-color: #333;
@@ -66,7 +68,7 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .menu-toggle {
+  .hamburger {
     display: flex;
   }
 
@@ -89,15 +91,15 @@ body {
   }
 
   /* Animation hamburger en croix */
-  .menu-toggle.active .bar:nth-child(1) {
+  .hamburger.active .bar:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
   }
 
-  .menu-toggle.active .bar:nth-child(2) {
+  .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
 
-  .menu-toggle.active .bar:nth-child(3) {
+  .hamburger.active .bar:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
   }
 }
