@@ -1,7 +1,8 @@
-// Gestion du menu mobile
-const mobileMenu = document.getElementById('mobile-menu');
-const menu = document.querySelector('.menu');
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('nav-menu');
 
-mobileMenu.addEventListener('click', () => {
-  menu.classList.toggle('active');
-});
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+</script>
