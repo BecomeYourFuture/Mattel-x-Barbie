@@ -202,8 +202,10 @@ img {
 }
 .timeline {
   position: relative;
-  margin: 50px 0;
-  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .timeline::before {
@@ -212,16 +214,22 @@ img {
   top: 0;
   bottom: 0;
   left: 50%;
+  transform: translateX(-50%);
   width: 2px;
   background: #000;
-  transform: translateX(-50%);
+}
+
 }
 
 .timeline-event {
-  position: relative;
-  width: 50%;
-  padding: 20px;
-  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0;
+  width: 80%;
+  max-width: 1000px;
+}
+
 }
 
 .timeline-event:nth-child(odd) {
@@ -248,27 +256,24 @@ img {
 }
 
 @media screen and (max-width: 768px) {
-.timeline::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  width: 2px;
-  background: #000;
-  transform: translateX(-50%);
-}
-
-
-  .timeline-event {
-    width: 100%;
-    left: 0 !important;
-    text-align: left !important;
-    padding-left: 30px;
-    margin-bottom: 20px;
+  .timeline::before {
+    left: 20px;
+    transform: none;
   }
 
-  .timeline-event::before {
-    left: 0;
+  .timeline-event {
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+  }
+
+  .timeline-event img {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+  }
+
+  .timeline-event .content {
+    margin: 0 auto;
   }
 }
