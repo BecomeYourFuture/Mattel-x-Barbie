@@ -196,3 +196,7 @@ footer {
     order: 1;
   }
 }
+img {
+  width: 300px; /* Largeur fixe de 300 pixels */
+  height: auto; /* Hauteur ajustée proportionnellement */
+}
