@@ -3,20 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mattel Project</title>
+  <title>Projet Mattel</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- Optionnel : inclusion d'une police Google -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header>
     <nav class="navbar">
       <div class="logo">Mattel Project</div>
-      <button class="hamburger" id="hamburger" aria-label="Menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
-      <ul class="menu" id="menu">
+      <ul class="menu">
         <li><a href="#history">History of Mattel</a></li>
         <li><a href="#new-project">Our New Project</a></li>
         <li><a href="#charity-link">Link with Charitable Associations</a></li>
@@ -28,10 +24,16 @@
         <li><a href="#initiatives">Our Other Initiatives</a></li>
         <li><a href="#contact">Any Idea (Contact Us)</a></li>
       </ul>
+      <!-- Bouton pour menu mobile -->
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </nav>
   </header>
 
-<main>
+  <main>
     <!-- Section History of Mattel -->
     <section id="history" class="section">
       <div class="content">
