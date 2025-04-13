@@ -1,4 +1,4 @@
-// Script pour le menu mobile
+// Gestion du menu mobile
 const mobileMenu = document.getElementById('mobile-menu');
 const menu = document.querySelector('.menu');
 
