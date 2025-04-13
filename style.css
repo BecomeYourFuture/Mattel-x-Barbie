@@ -1,131 +1,82 @@
-/* Variables et réinitialisation */
-:root {
-  --primary-color: #3498db;
-  --secondary-color: #2ecc71;
-  --bg-color: #f4f4f4;
-  --text-color: #333;
-  --transition-speed: 0.3s;
-}
-
+/* Réinitialisation des marges et paddings */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.6;
-  color: var(--text-color);
-  background: var(--bg-color);
-}
-
-/* Navbar */
+/* Style de la navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--primary-color);
+  background-color: #333;
   padding: 10px 20px;
+  position: relative;
 }
 
+/* Logo */
 .logo {
-  font-size: 1.5em;
   color: #fff;
+  font-size: 24px;
   font-weight: bold;
 }
 
-.menu {
+/* Menu de navigation */
+.nav-menu {
   list-style: none;
   display: flex;
 }
 
-.menu li {
-  margin: 0 10px;
+.nav-menu li {
+  margin-left: 20px;
 }
 
-.menu li a {
+.nav-menu li a {
   color: #fff;
   text-decoration: none;
-  padding: 8px 12px;
-  transition: background var(--transition-speed);
+  font-size: 16px;
+  transition: color 0.3s;
 }
 
-.menu li a:hover {
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 4px;
+.nav-menu li a:hover {
+  color: #f0a500;
 }
 
-/* Menu mobile */
-.menu-toggle {
+/* Icône hamburger */
+.hamburger {
   display: none;
   flex-direction: column;
   cursor: pointer;
+  background: none;
+  border: none;
 }
 
-.menu-toggle .bar {
-  height: 3px;
+.bar {
   width: 25px;
+  height: 3px;
   background-color: #fff;
   margin: 4px 0;
+  transition: 0.4s;
 }
 
-/* Sections */
-.section {
-  padding: 60px 20px;
-  text-align: center;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 1s forwards;
-}
-
-.section:nth-child(even) {
-  background: #e9ecef;
-}
-
-.section h2 {
-  margin-bottom: 20px;
-  font-size: 2em;
-  color: var(--primary-color);
-}
-
-.section p {
-  font-size: 1.1em;
-}
-
-/* Footer */
-footer {
-  background: var(--primary-color);
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-}
-
-/* Animation keyframes */
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Responsive design */
+/* Responsive */
 @media (max-width: 768px) {
-  .menu {
-    display: none;
+  .nav-menu {
+    position: absolute;
+    top: 60px;
+    left: -100%;
     flex-direction: column;
+    background-color: #333;
     width: 100%;
+    transition: left 0.3s;
   }
-  
-  .menu li {
-    margin: 10px 0;
+
+  .nav-menu.active {
+    left: 0;
   }
-  
-  .menu-toggle {
-    display: flex;
-  }
-  
-  .menu.active {
+
+  .hamburger {
     display: flex;
   }
 }
