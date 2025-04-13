@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Become Your Future</title>
+  <title>Projet d'Anglais</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Optionnel: inclusion d'une police Google -->
+  <!-- Inclusion d'une police Google pour une typographie élégante -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -19,7 +19,7 @@
         <li><a href="#blog">Blog</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <!-- Bouton pour menu mobile -->
+      <!-- Bouton pour afficher/cacher le menu en version mobile -->
       <div class="menu-toggle" id="mobile-menu">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -33,7 +33,9 @@
     <section id="accueil" class="section accueil">
       <div class="content">
         <h1>Bienvenue sur mon site de projet d'anglais</h1>
-        <p>Cliquez sur les différentes sections pour en savoir plus.</p>
+        <p>Ici, tu trouveras des informations sur mes projets, mon parcours et bien plus encore.</p>
+        <!-- Exemple d'image personnalisable -->
+        <img src="images/accueil.jpg" alt="Image d'accueil" class="responsive-img">
       </div>
     </section>
 
@@ -41,7 +43,20 @@
     <section id="projets" class="section projets">
       <div class="content">
         <h2>Projets</h2>
-        <p>Découvrez mes projets passionnants en anglais.</p>
+        <p>Découvre mes projets innovants et passionnants développés durant mon apprentissage en anglais.</p>
+        <div class="card-container">
+          <!-- Exemple de carte projet -->
+          <div class="card">
+            <img src="images/projet1.jpg" alt="Projet 1">
+            <h3>Projet 1</h3>
+            <p>Description succincte du projet.</p>
+          </div>
+          <div class="card">
+            <img src="images/projet2.jpg" alt="Projet 2">
+            <h3>Projet 2</h3>
+            <p>Description succincte du projet.</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -49,7 +64,9 @@
     <section id="apropos" class="section apropos">
       <div class="content">
         <h2>À propos</h2>
-        <p>En savoir plus sur mon parcours et mes compétences.</p>
+        <p>En savoir plus sur mon parcours, mes compétences et mes motivations.</p>
+        <!-- Possibilité d'ajouter un portrait ou une image liée -->
+        <img src="images/apropos.jpg" alt="À propos de moi" class="responsive-img">
       </div>
     </section>
 
@@ -57,7 +74,8 @@
     <section id="blog" class="section blog">
       <div class="content">
         <h2>Blog</h2>
-        <p>Articles, actualités et conseils en anglais.</p>
+        <p>Articles, astuces et réflexions autour de la maîtrise de l'anglais et bien d'autres sujets.</p>
+        <!-- Ici, tu pourras intégrer un flux de posts ou quelques extraits -->
       </div>
     </section>
 
@@ -65,15 +83,22 @@
     <section id="contact" class="section contact">
       <div class="content">
         <h2>Contact</h2>
-        <p>N'hésite pas à me contacter pour plus d'informations !</p>
+        <p>Si tu as des questions ou souhaites échanger, n'hésite pas à me contacter :</p>
+        <!-- Exemple d'un formulaire de contact simple -->
+        <form action="mailto:tonemail@example.com" method="post" enctype="text/plain">
+          <input type="text" name="nom" placeholder="Ton nom" required>
+          <input type="email" name="email" placeholder="Ton email" required>
+          <textarea name="message" placeholder="Ton message" required></textarea>
+          <button type="submit">Envoyer</button>
+        </form>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Mon Projet d'Anglais</p>
+    <p>&copy; 2025 Mon Projet d'Anglais - Tous droits réservés</p>
   </footer>
-
+  
   <script src="script.js"></script>
 </body>
 </html>
