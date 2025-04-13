@@ -1,7 +1,7 @@
-const menuToggle = document.getElementById('mobile-menu');
+// Script pour le menu mobile
+const mobileMenu = document.getElementById('mobile-menu');
 const menu = document.querySelector('.menu');
 
-menuToggle.addEventListener('click', () => {
-  menuToggle.classList.toggle('active');
+mobileMenu.addEventListener('click', () => {
   menu.classList.toggle('active');
 });
