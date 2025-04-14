@@ -20,6 +20,40 @@ body {
   background: var(--bg-color);
 }
 
+/* Empêche le défilement horizontal */
+body, html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Pour le responsive de la section timeline */
+@media screen and (max-width: 768px) {
+  .timeline {
+    padding: 20px 10px;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline-content, .timeline-image {
+    width: 100%;
+    text-align: center;
+  }
+
+  iframe {
+    max-width: 100%;
+    height: auto;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+
 /* Navbar */
 .navbar {
   display: flex;
