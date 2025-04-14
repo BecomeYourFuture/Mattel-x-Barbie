@@ -4,4 +4,4 @@ const menu = document.querySelector('.menu');
 
 mobileMenu.addEventListener('click', () => {
   menu.classList.toggle('active');
-});
+})
