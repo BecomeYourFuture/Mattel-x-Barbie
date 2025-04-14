@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Game</title>
+  <link rel="stylesheet" href="minigame.css">
+</head>
+<body>
+  <!-- Bouton Retour -->
+  <a href="javascript:history.back()" class="back-button">← Back</a>
+
+  <!-- Conteneur principal -->
+  <div class="robot-container">
+    <div class="speech-bubble">
+      <p id="typed-text"></p>
+      <button id="magic-button" class="hidden">✨ Wanna see it again ✨</button>
+    </div>
+    <div class="character">🤖</div>
+  </div>
+
+  <!-- Vidéo masquée initialement -->
+  <video id="fullscreen-video" style="display: none;" autoplay loop>
+    <source src="stop.mp4" type="video/mp4">
+    Votre navigateur ne supporte pas la lecture de vidéos.
+  </video>
+
+  <script src="minigame.js"></script>
+</body>
+</html>
