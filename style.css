@@ -26,6 +26,37 @@ body, html {
   width: 100%;
 }
 
+/* Styles pour le mode portrait */
+@media screen and (orientation: portrait) {
+  /* Masquer le contenu principal */
+  .main-content {
+    display: none;
+  }
+
+  /* Afficher le message de rotation */
+  .rotate-message {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    background-color: #ffcc00;
+    font-size: 1.2em;
+  }
+}
+
+/* Styles pour le mode paysage */
+@media screen and (orientation: landscape) {
+  /* Afficher le contenu principal */
+  .main-content {
+    display: block;
+  }
+
+  /* Masquer le message de rotation */
+  .rotate-message {
+    display: none;
+  }
+}
+
+
 /* Pour le responsive de la section timeline */
 @media screen and (max-width: 768px) {
   .timeline {
