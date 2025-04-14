@@ -15,3 +15,6 @@ if (!isMobileDevice()) {
   document.querySelector('.rotate-message').style.display = 'none';
   document.querySelector('.main-content').style.display = 'block';
 }
+window.addEventListener("orientationchange", function() {
+  location.reload(); // Recharge la page pour appliquer les nouveaux styles
+});
