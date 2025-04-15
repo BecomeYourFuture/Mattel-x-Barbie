@@ -1,4 +1,4 @@
-const text = "Never 2 without 3 ! But this time we don't have something better...";
+const text = "Never 2 without 3 ! But this time we don't have anything better...";
 let index = 0;
 const speed = 50; // Vitesse de frappe en millisecondes
 
