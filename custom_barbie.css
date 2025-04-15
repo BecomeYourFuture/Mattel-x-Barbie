@@ -47,7 +47,8 @@ body {
   top: -150px;
   left: 50%;
   transform: translateX(-50%);
-  width: 1000px;
+  width: 90%;
+  max-width: 600px;
   padding: 20px;
   background: #fff;
   border: 3px solid #000;
@@ -56,7 +57,9 @@ body {
   font-size: 1.5rem;
   line-height: 1.6;
   text-align: center;
+  box-sizing: border-box;
 }
+
 
 
 
