@@ -29,30 +29,17 @@ body {
   background-color: #e055a0;
 }
 
+/* Conteneur du robot */
 .robot-container {
   padding-top: 100px;
   position: relative;
   text-align: center;
-  margin-bottom: 150px;
 }
 
-
+/* Emoji du robot */
 .character {
   font-size: 12rem;
 }
-
-@media screen and (max-width: 768px) {
-  .character {
-    font-size: 8rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .character {
-    font-size: 6rem;
-  }
-}
-
 
 /* Bulle de dialogue */
 .speech-bubble {
@@ -70,20 +57,6 @@ body {
   line-height: 1.6;
   text-align: center;
 }
-}
-
-@media screen and (max-width: 768px) {
-  .speech-bubble {
-    top: -100px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .speech-bubble {
-    top: -80px;
-  }
-}
-
 
 
 
