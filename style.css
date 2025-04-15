@@ -618,3 +618,10 @@ background-color: #c2185b;}
   color: #fff;
   font-weight: bold;
 }
+.video-player {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  max-width: 100%;
+}
